@@ -1,1 +1,39 @@
 /*  your css code here. If applicable */
+/* Heading styling */
+#photo-heading {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Main container styling */
+#animal-photos {
+  display: flex;               /* Flexbox layout */
+  flex-wrap: wrap;             /* Wrap items to next row */
+  justify-content: center;     /* Center items horizontally */
+  gap: 15px;                   /* Space between images */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Individual image styling */
+#animal-photos img {
+  width: 200px;                /* Fixed width */
+  height: auto;                /* Maintain aspect ratio */
+  border-radius: 8px;          /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow */
+  transition: transform 0.3s;  /* Hover animation */
+}
+
+/* Hover effect */
+#animal-photos img:hover {
+  transform: scale(1.05);      /* Slight zoom on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #animal-photos img {
+    width: 10
+
